@@ -5,7 +5,6 @@
 #include <Utilities/types.h>
 #include <Utilities/StrFmt.h>
 #include <Utilities/BEType.h>
-#include <Utilities/Macro.h>
 #include <Utilities/Atomic.h>
 #include <unordered_map>
 #include <Emu/RSX/rsx_methods.h>

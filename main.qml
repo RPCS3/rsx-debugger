@@ -11,6 +11,30 @@ Window {
     SplitView {
         id: splitView1
         anchors.fill: parent
+
+        ScrollView
+        {
+            ListView {
+                width: 130
+                anchors.fill: parent.fill
+                model: commandList
+
+                delegate: Item {
+                    x: 5
+                    width: 80
+                    height: 40
+
+                    Row {
+                        Text {
+                            text: model.modelData
+                            anchors.verticalCenter: parent.verticalCenter
+                        }
+                        spacing: 10
+                    }
+                }
+            }
+        }
+
         ScrollView
         {
             ListView {
